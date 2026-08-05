@@ -1,0 +1,40 @@
+{
+  "name": "ghost-admin-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for the Ghost Admin API — manage posts, pages, tags, and images from any MCP client",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ghost",
+    "ghost-cms",
+    "ghost-admin-api",
+    "blog"
+  ],
+  "license": "MIT",
+  "author": "Kevin Edraki",
+  "type": "module",
+  "bin": {
+    "ghost-admin-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc && chmod +x dist/index.js",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "@tryghost/admin-api": "^1.14.0",
+    "zod": "^3.24.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.0",
+    "typescript": "^5.6.0"
+  }
+}
