@@ -11,7 +11,15 @@
     "blog"
   ],
   "license": "MIT",
-  "author": "Kevin Edraki",
+  "author": "Kiarash (Kevin) Edraki",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiarashedraki/ghost-mcp.git"
+  },
+  "homepage": "https://github.com/kiarashedraki/ghost-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/kiarashedraki/ghost-mcp/issues"
+  },
   "type": "module",
   "bin": {
     "ghost-admin-mcp": "dist/index.js"
